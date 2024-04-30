@@ -67,8 +67,8 @@ body {
   color: #fff;
   font-weight: 400;
   font-size: 1.04vw;
-  line-height: 15px;
-  letter-spacing: 2.4px;
+  line-height: 1.04vw;
+  letter-spacing: 0.167vw;
   text-transform: uppercase;
 }
 .header__menu li button {
@@ -222,10 +222,10 @@ align-content: center;
   background: #fff;
   border-radius: 30px;
   height: 30px;
-  width: 102px;
+  width: 7.08vw;
 }
 .item__text a{
-padding: 7px 15px 8px 15px;
+padding: 0.49vw 1.04vw 0.56vw 1.04vw;
 font-weight: 400;
 font-size: 0.90vw;
 line-height: 14px;
@@ -237,11 +237,11 @@ color: #EF3340;
   margin-top: 37px;
 }
 .item__text2 a{
- padding: 7px 15px 8px 15px;
+  padding: 0.49vw 1.04vw 0.56vw 1.04vw;
   background: #fff;
   border-radius: 30px;
   height: 30px;
-  width: 150px;
+  width: 10.42vw;
 }
 .item__text2 a{
 font-weight: 400;
@@ -654,9 +654,31 @@ color: #fff;
   } 
 }
 @media(max-width:550px){
+  .header__menu li a {
+    font-weight: 400;
+    font-size: 1.54vw;
+    line-height: 1.54vw;
+    letter-spacing: 0.167vw;
+    text-transform: uppercase;
+  }
+  .item__text a {
+    font-weight: 400;
+    font-size: 1.3vw;
+  }
   .third__body {
     margin-left: -19.33vw;
   }
+  .header__logo {
+    display: none;
+  }
+  .item__subtext a {
+    font-size: 1.34vw;
+    line-height: 1.34vw;
+}
+.item__text2 a {
+  font-weight: 400;
+  font-size: 1.30vw;
+}
 }
 @media(max-width:475px){
   .second {
@@ -671,4 +693,4 @@ color: #fff;
     letter-spacing: 4.8px;
     text-transform: uppercase;
 }
-} 
+}   
