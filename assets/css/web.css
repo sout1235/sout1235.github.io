@@ -679,6 +679,14 @@ color: #fff;
   font-weight: 400;
   font-size: 1.30vw;
 }
+  .sixthLinks a {
+  font-weight: 400;
+  font-size: 1.34vw;
+  line-height: 1.55vw;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 }
 @media(max-width:475px){
   .second {
