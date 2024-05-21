@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet"  href="assets/css/web.css">
+	<link rel="stylesheet"  href="assets/css/web.css" id="theme">
 
 
 	<title>Торговый центр</title>
@@ -17,11 +17,14 @@
 						<img src="assets/img/logo.png" alt="logo">
 					</div>
 					<ul class="header__menu">
+						<li> <button class="buttonS" id="switchMode">Alternate</button> </li>
 						<li><a href="#">Explore</a></li>
 						<li><a href="#">Events</a></li>
 						<li><a href="#">Community</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Contact</a></li>
+						<li><button onclick="changeFontSizeUp()">Text +</button></li>
+						<li><button onclick="changeFontSizeDown()">Text -</button></li>
 					</ul>
 				</div>			
 		</header>
@@ -252,5 +255,9 @@
 			<a href="#">Ideabar</a>
 		</div>
 </section>
+<div id="preloader">
+	<img src="assets/img/loading-chain.gif" width="300px" alt = "preloader">
+</div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
