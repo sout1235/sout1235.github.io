@@ -760,8 +760,8 @@ color: #fff;
 .wave {
   z-index: 1000;
   opacity: 1;
-  width: 27.04vw;
-  height: 27.04vw;
+  width: 32.04vw;
+  height: 32.04vw;
 }  
 }
 @media(max-width:475px){
