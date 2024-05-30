@@ -26,6 +26,44 @@
   outline: none;
 
 }
+.wave {
+  z-index: 1000;
+  opacity: 1;
+  width: 20.04vw;
+  height: 20.04vw;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave-animation 1s linear forwards;
+  background: #7a7514c2;
+  transition: background 1s linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(10);
+    opacity: 0.94;
+    background: #171C8F;
+  }
+  75% {
+    transform: scale(5);
+    opacity: 0.94;
+    background: #171C8F;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0.94;
+    background: #171C8F;
+  }
+}
 #preloader {
   position: fixed;
   top:0;
@@ -641,7 +679,7 @@ color: #fff;
 }
 
  @media(max-width: 780px){
-  .firstScreen__body {
+  /* .firstScreen__body {
     max-width: 93.75vw;
     display: block;
   align-content: center;
@@ -656,7 +694,7 @@ color: #fff;
   }
 .firstScreen__offer {
   margin-left: 17.54vw;
-}
+} */
 .second {
   width: 100%;
   height: 400px;
@@ -676,6 +714,13 @@ color: #fff;
   .link__block{
     display: none;
   } 
+  .header__logo {
+    max-width: 16.39vw;
+    display: none;
+  }
+  .header__body {
+    margin-left: -15px;
+}
 }
 @media(max-width:550px){
   .header__menu li {
@@ -695,6 +740,12 @@ color: #fff;
     letter-spacing: 0.167vw;
     text-transform: uppercase;
   }
+  .secondScreen {
+    display: flex;
+    justify-content: center;
+    margin: -35px -22.5px;
+    max-width: 65%;
+}
   .item__text a {
     font-weight: 400;
     font-size: 1.3vw;
@@ -725,7 +776,7 @@ color: #fff;
 @media(max-width:475px){
   .second {
     width: 100%;
-    height: 320px;
+    height: 280px;
     background: #F4C3CC;
   }
   .thirdItem__text {
@@ -734,5 +785,45 @@ color: #fff;
     line-height: 1.88vw;
     letter-spacing: 4.8px;
     text-transform: uppercase;
+}
+.sixthUnder__text {
+  font-weight: 400;
+  font-size: 1.55vw;
+  line-height: 1.72vw;
+  letter-spacing: 0.21px;
+  color: #FFFFFF;
+}
+.firthText {
+  font-weight: 400;
+  font-size: 1.65vw;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.21px;
+  color: #000000;
+  padding-top: 1.15vw;
+}
+.firstScreen__offer p {
+  font-weight: 500;
+  font-size: 1.66vw;
+  line-height: 2.57vw;
+  letter-spacing: 0.74px;
+  color: #FFFFFF;
+  width: 23.47vw;
+  margin: 1.39vw 0;
+}
+.fourth__offer h1 {
+  font-weight: 700;
+  font-size: 7.06vw;
+  font-size: 4.06vw;
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+}
+.fourth__offer p {
+  padding-top: 9px;
+  font-weight: 500;
+  font-size: 1.6vw;
+  line-height: 2.29vw;
+  letter-spacing: 0.61px;
+  color: #000000;
 }
 }   
