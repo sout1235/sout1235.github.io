@@ -22,11 +22,14 @@
 .wave {
   z-index: 1000;
   opacity: 1;
-  width: 20.04vw;
-  height: 20.04vw;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
   position: absolute;
   border-radius: 50%;
-  transform: scale(0);
+  /* transform: scale(0); */
+  transform: translate(-50%, -50%);
   animation: wave-animation 1s linear forwards;
   background: #171C8F; 
   transition: background 1s linear;
@@ -94,6 +97,7 @@ a {
 body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 .header {
   padding: 30px 45px;
@@ -811,3 +815,10 @@ color: #fff;
   color: #000000;
 }
 }   
+@media (orientation: portrait) {
+  .wave {
+    width: 200vh;
+    height: 200vh;
+  }
+}
+
